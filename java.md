@@ -37,6 +37,8 @@ for (char ch : stack) {
 }
 result.toString();
 
+s.toCharArray(); # make string to char array
+
 6. Priority Queue (Heap):
 MinHeap:
 PriorityQueue<Integer> minHeap = new PriorityQueue<>();
@@ -49,12 +51,17 @@ PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 
 # push onto heap 
 heap.offer(ele);
-heap.offer(new int[]{total_time, T[i], i}); # save multiple element in heap node
+heap.offer(new int[]{total_time, t, i}); # save multiple element in heap node
 
 # pop the smallest in minheap
 heap.poll();
 
-7. Misc
+7. Deque:
+Deque<int> q = new ArrayDeque<>();
+q.offer(3); # push to deque
+p = q.pollFirst(); # pop out
+
+100. Misc
 myList.isEmpty();
 mySet.isEmpty();
 map.isEmpty();
